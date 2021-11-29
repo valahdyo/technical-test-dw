@@ -1,0 +1,21 @@
+<%- include("partials/header") %> 
+
+<h1><%= name %> </h1>
+
+<div class="row">
+ <% contents.forEach(book => { %>
+    <div class="col-sm-6 col-md-4">
+      <div class="thumbnail">
+        <img src="/images/empty.png" alt="img">
+        <div class="caption">
+          <h3><%= book.name %></h3>
+          <p>Stock: <%= book.stok %></p>
+          <p><%= book.desc %></p>
+          <p><a href="/pinjam/<%= categoryId %>/<%= book._id %>" class="btn btn-primary <%= book.stok == 0 ? 'disabled' : ""%>" role="button">Pinjam</a> <a href="/kembalikan/<%= categoryId %>/<%= book._id %>" class="btn btn-default" role="button">Kembalikan</a></p>
+        </div>
+      </div>
+  </div>
+  <% }) %>
+</div>
+
+<%- include("partials/footer") %> 

@@ -1,0 +1,10 @@
+<%- include("partials/header") %> 
+
+<h1>Books Category</h1>
+
+  <%   contents.forEach(function(content) { %>
+   <h2><a href="/category/<%= content._id %>"><%= content.name %></a></h2>
+<%  }) %>
+
+
+<%- include("partials/footer") %> 

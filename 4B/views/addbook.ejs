@@ -1,0 +1,25 @@
+<%- include("partials/header") %> 
+
+<h1>Add book</h1>
+
+<form action="/addbook" method="post">
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Title</label>
+        <input type="text" class="form-control" name="postTitle">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Category</label>
+        <input type="text" class="form-control" name="postCategory">
+      </div>
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1">Stok</label>
+        <input type="text" class="form-control" name="postStock">
+      </div>
+    <div class="form-group">
+      <label for="exampleFormControlTextarea1">Description</label>
+      <textarea class="form-control" name=postDesc rows="3" required></textarea>
+    </div>
+    <button class="btn btn-primary mb-3" type="submit">Publish</button>
+  </form>
+
+<%- include("partials/footer") %> 
