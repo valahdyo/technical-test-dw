@@ -1,8 +1,10 @@
+//membuang angka kurang dari input
 function removeSmallest(n, num_list) {
     if (n <= 0) {
         console.log(num_list)
     } else {
     const res = []
+    //cek tiap index
     for (let i = 0; i < num_list.length; i++) {
         if (num_list[i] > n) {
             res.push(num_list[i])
