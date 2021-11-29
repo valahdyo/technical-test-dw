@@ -17,3 +17,5 @@ $ npm install
 $ npm app.js
 ```
 
+Or, if you are lazy person you can see my project at: https://perpus-app44.herokuapp.com/
+
